@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- OpenCV Camera View -->
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/tutorial1_activity_java_surface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Capture Button -->
+    <Button
+        android:id="@+id/capture_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/capture_button_bg"
+        android:text="Capture"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+
+        android:gravity="center" />
+
+    <!-- Small Preview Area -->
+    <ImageView
+        android:id="@+id/preview_area"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/preview_border"
+        android:contentDescription="Preview Image"
+        android:scaleType="centerCrop"
+        android:clickable="true"
+        android:focusable="true" />
+</RelativeLayout>
